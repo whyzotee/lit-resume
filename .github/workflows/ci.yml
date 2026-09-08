@@ -1,0 +1,50 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: ${{ matrix.name }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: Format
+            task: fmt:check
+          - name: Tests
+            task: test
+          - name: Build
+            task: build
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-node@v7.0.0
+        with:
+          node-version-file: .node-version
+      - uses: denoland/setup-deno@v2.0.5
+        with:
+          deno-version: v2.9.6
+      - name: Install locked dependencies
+        run: deno install --frozen
+      - name: Run ${{ matrix.name }}
+        run: deno task ${{ matrix.task }}
+      - name: Upload static site
+        if: matrix.task == 'build'
+        uses: actions/upload-artifact@v7.0.1
+        with:
+          name: static-site
+          path: dist/
+          if-no-files-found: error
+          retention-days: 7

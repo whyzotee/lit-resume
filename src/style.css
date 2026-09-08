@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+main {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: underline;
+}
+
+section {
+  @apply my-4;
+}
+
+section h2 {
+  @apply font-semibold;
+}
+
+section hr {
+  @apply mt-0 mb-2;
+  border-color: darkgrey;
+}
+
+.work-experience {
+  @apply my-4;
+}
+
+.print-only {
+  display: none;
+}
+
+@media print {
+  .print-only {
+    display: inherit;
+  }
+
+  .web-only {
+    display: none;
+  }
+
+  main {
+    margin: 0 0;
+    padding: 0;
+    @apply text-xs;
+  }
+
+  ul {
+    @apply pl-6;
+  }
+
+  li {
+    break-inside: avoid;
+  }
+
+  section {
+    @apply my-2;
+  }
+
+  section h2 {
+    @apply text-sm;
+    break-after: avoid;
+  }
+
+  section hr {
+    @apply mt-0 mb-1;
+    break-after: avoid;
+  }
+
+  .work-experience {
+    @apply my-1;
+  }
+
+  .work-header {
+    break-after: avoid;
+  }
+}
+
+/* Available before JavaScript runs, including when printing static HTML. */
+resume-hideable {
+  display: block;
+}
+
+resume-hideable:defined > * {
+  cursor: pointer;
+  user-select: none;
+}
+
+resume-hideable[hide],
+resume-hideable[hide] > * {
+  color: #d1d5db;
+}
+
+resume-hideable:defined[hide] > * {
+  cursor: copy;
+}
+
+@media print {
+  resume-hideable[hide] {
+    display: none !important;
+  }
+}
