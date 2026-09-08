@@ -33,3 +33,9 @@ Set SKIP_DEPENDENCY_INSTALL for production and preview builds. The command insta
 Commit deno.lock. No Pages Functions, Worker runtime or Svelte adapter is needed. Cloudflare serves the generated dist/ files; Deno runs only during the build. This configuration has not yet been deployed to Cloudflare.
 
 See [Deno installation](https://docs.deno.com/runtime/getting_started/installation/), [Pages build configuration](https://developers.cloudflare.com/pages/configuration/build-configuration/) and [build image settings](https://developers.cloudflare.com/pages/configuration/build-image/).
+
+## Pull request checks
+
+GitHub Actions runs separate Format, Tests and Build checks on pull requests and pushes to main. Each check installs the frozen Deno lockfile on Linux. The Build check uploads dist/ as the static-site artifact; this confirms the site builds but does not publish it.
+
+Actual preview deployments and their GitHub status are provided by the Cloudflare Pages Git integration. Connect this repository to the Pages project using the settings above and enable preview deployments for the PR branch. Pages then reports deployment status and a preview URL on the PR.
