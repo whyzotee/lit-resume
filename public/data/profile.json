@@ -10,26 +10,10 @@
     "location": "Bangkok, Thailand",
     "website": "whyzotee.dev"
   },
-  "projects": [
-    {
-      "name": "chiru",
-      "details": "an flutter app for customizing sounds for Relax, Users can choose from 7 different sounds and adjust the level of each sound effect.",
-      "url": "github.com/whyzotee/chiru",
-      "hide": false
-    },
-    {
-      "name": "whatsup",
-      "details": "A lightweight package to return time-based greetings like \"Good morning\" or \"Good afternoon\" from a given datetime.",
-      "url": "github.com/whyzotee/whatsup",
-      "hide": false
-    },
-    {
-      "name": "linebot-nodejs-googlesheet",
-      "details": "Built a Node.js-based LINE Chatbot integrated with Google Sheets, enabling users to query and manipulate spreadsheet records seamlessly with structured visual feedback.",
-      "url": "github.com/whyzotee/linebot-nodejs-googlesheet",
-      "hide": false
-    }
-  ],
+  "resumeUrl": {
+    "sourceLink": "https://github.com/whyzotee/resume",
+    "fullVersionLink": "https://resume.whyzotee.dev"
+  },
   "technologies": [
     {
       "section": "Languages:",
@@ -37,7 +21,7 @@
     },
     {
       "section": "Frameworks:",
-      "details": "React, Flutter, Tanstack (router, query), React Native, Axum"
+      "details": "React, Flutter, Tanstack (router, query), React Native, Axum, Fastapi"
     },
     {
       "section": "AI & Agents:",
@@ -49,17 +33,23 @@
     },
     {
       "section": "Tools:",
-      "details": "Git, GitHub Actions, PostgreSQL, Redis, Vim, NeoVim, iTerm2"
+      "details": "Git, GitHub Actions, PostgreSQL, Vim, NeoVim, iTerm2"
+    }
+  ],
+  "educations": [
+    {
+      "head": "King Mongkut's Institute of Technology Ladkrabang",
+      "details": "B.Eng. Computer Engineering (2024 - Present) | GPAX: 3.28"
     }
   ],
   "workExperiences": [
     {
-      "position": "Software Engineer",
-      "company": "Freelance",
+      "position": "Software Engineer (Freelance)",
+      "company": "",
       "years": ["2024", "Current"],
       "details": [
-        "MassageHubs - Developed an app for purchasing gift certificates redeemable at four client branches in California; responsible for app development and system design.",
-        "EaseUp - Designed the system and developed customer and therapist apps for at-home massage services, matching clients with the nearest available therapist."
+        "MassageHubs — Developed a mobile application for purchasing and redeeming gift certificates across four client branches in California. Contributed to both application development and system design.",
+        "EazeMe — Designed the system architecture and developed separate mobile applications for customers and massage therapists, supporting at-home massage services with location-based matching to connect customers with the nearest available therapist."
       ]
     },
     {
@@ -68,8 +58,8 @@
       "url": "https://paperless-th.com",
       "years": ["2023", "2024"],
       "details": [
-        "Mashares - Developed the UI and application-side logic for a co-working space booking app. Implemented features including news updates, meeting room reservations, 3D printer access, and various tools for users.",
-        "CaraTrip - Developed key features including authentication, user profiles, and route search using OpenRouteService API; customized map tiles to match the app theme."
+        "Mashares — Developed the UI and application logic for a co-working space booking application. Implemented features including news updates, meeting room reservations, 3D printer access, and other workspace services.",
+        "CaraTrip — Developed core features including user authentication, profile management, and route search using the OpenRouteService API. Customized map tiles and map styling to align with the application's visual design."
       ]
     },
     {
@@ -86,15 +76,43 @@
       ]
     }
   ],
-  "educations": [
+  "projects": [
     {
-      "head": "King Mongkut's Institute of Technology Ladkrabang",
-      "details": "B.Eng. Computer Engineering (2024 - Present) | GPAX: 3.28"
+      "name": "chiru",
+      "details": "Developed a Flutter relaxation app that allows users to mix seven ambient sounds and independently adjust the volume of each sound.",
+      "url": "github.com/whyzotee/chiru",
+      "hide": false
+    },
+    {
+      "name": "whatsup",
+      "details": "Developed a lightweight package that generates time-based greetings, such as \"Good morning\" or \"Good afternoon,\" based on a given DateTime.",
+      "url": "github.com/whyzotee/whatsup",
+      "hide": false
+    },
+    {
+      "name": "linebot-nodejs-googlesheet",
+      "details": "Built a LINE chatbot using Node.js and Google Sheets, enabling users to query and manage spreadsheet records through structured chat interactions.",
+      "url": "github.com/whyzotee/linebot-nodejs-googlesheet",
+      "hide": false
+    },
+    {
+      "name": "wakapi-iac",
+      "details": "Automated the deployment of Wakapi on Google Cloud Platform (GCP) using Infrastructure as Code (IaC), with Neon (PostgreSQL) as the database.",
+      "url": "github.com/whyzotee/wakapi-iac",
+      "hide": false
+    },
+    {
+      "name": "cedt-phone",
+      "details": "Developed a Python web crawler using Regex to collect smartphone specifications and export the data as CSV.",
+      "url": "https://github.com/whyzotee/cedt-phone",
+      "hide": false
     }
   ],
   "interests": ["High Performance Computing", "Quantum computing"],
-  "resumeUrl": {
-    "sourceLink": "https://github.com/whyzotee/resume",
-    "fullVersionLink": "https://resume.whyzotee.dev"
-  }
+  "certificates": [
+    {
+      "name": "Google Cloud Computing Foundations Certificate",
+      "link": "https://www.credly.com/badges/cf56bf7b-8ff5-492a-ab82-9b127ec9f5ab"
+    }
+  ]
 }

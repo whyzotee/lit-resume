@@ -5,6 +5,7 @@ export interface IProfileResp {
   workExperiences: IWorkExperience[];
   educations: IEducation[];
   interests: string[];
+  certificates: ICertificate[];
   resumeUrl: {
     sourceLink: string;
     fullVersionLink: string;
@@ -46,4 +47,9 @@ export interface IWorkExperience {
 export interface IEducation {
   head: string;
   details: string;
+}
+
+export interface ICertificate {
+  name: string;
+  link: string;
 }

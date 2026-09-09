@@ -37,6 +37,7 @@ export function mainTemplate(profile: IProfileResp) {
     workExperiences = [],
     projects = [],
     interests = [],
+    certificates = [],
   } = profile;
 
   return html`
@@ -92,7 +93,7 @@ export function mainTemplate(profile: IProfileResp) {
 
       <section>
         <resume-hideable>
-          <h2 class="text-xl sm:text-2xl uppercase text-left">Side Projects</h2>
+          <h2 class="text-xl sm:text-2xl uppercase text-left">Projects</h2>
           <hr />
           <ul class="text-left list-disc pl-5 sm:pl-8 print:pl-6 wrap-break-word">
             ${projects.map(
@@ -121,6 +122,22 @@ export function mainTemplate(profile: IProfileResp) {
               (interest) => html`
                 <resume-hideable>
                   <li>${interest}</li>
+                </resume-hideable>
+              `,
+            )}
+          </ul>
+        </resume-hideable>
+      </section>
+
+      <section>
+        <resume-hideable>
+          <h2 class="text-xl sm:text-2xl uppercase text-left">Certificates</h2>
+          <hr />
+          <ul class="text-left list-disc pl-5 sm:pl-8 print:pl-6 wrap-break-word">
+            ${certificates.map(
+              (cert) => html`
+                <resume-hideable>
+                  <li><a href="${cert.link}" target="_blank" rel="noreferrer">${cert.name}</a></li>
                 </resume-hideable>
               `,
             )}

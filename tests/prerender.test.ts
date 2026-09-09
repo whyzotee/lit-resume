@@ -14,7 +14,7 @@ test("the response contains all resume sections before JavaScript runs", () => {
     "Technologies and Languages",
     "Education",
     "Work Experience",
-    "Side Projects",
+    "Projects",
     "Interests",
     "Original template by",
   ]) {
