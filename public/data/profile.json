@@ -11,49 +11,48 @@
     "website": "whyzotee.dev"
   },
   "resumeUrl": {
-    "sourceLink": "https://github.com/whyzotee/resume",
+    "sourceLink": "https://github.com/whyzotee/lit-resume",
     "fullVersionLink": "https://resume.whyzotee.dev"
   },
   "technologies": [
     {
       "section": "Languages:",
-      "details": "Rust, Dart, Python, JavaScript, TypeScript."
+      "details": "Rust, Dart, Python, JavaScript, TypeScript"
     },
     {
       "section": "Frameworks:",
-      "details": "React, Flutter, Tanstack (router, query), React Native, Axum, Fastapi"
+      "details": "React, Flutter, Tanstack (router, query), Tailwind, React Native, Axum, Fastapi"
     },
     {
       "section": "AI & Agents:",
-      "details": "Claude Code, Antigravity, Codex"
+      "details": "Claude Code, Antigravity, Codex, Hermes"
     },
     {
       "section": "Cloud & Infra:",
-      "details": "GCP, Cloudflare, Vercel, Terraform, Docker"
+      "details": "GCP, Cloudflare, Vercel, Terraform, Docker, OrbStack, Containerlab"
     },
     {
       "section": "Tools:",
-      "details": "Git, GitHub Actions, PostgreSQL, Vim, NeoVim, iTerm2"
+      "details": "Git, GitHub Actions, PostgreSQL, Vim, NeoVim, Nano, iTerm2"
     }
   ],
   "educations": [
     {
       "head": "King Mongkut's Institute of Technology Ladkrabang",
-      "details": "B.Eng. Computer Engineering (2024 - Present) | GPAX: 3.28"
+      "details": "B.Eng. in Computer Engineering (GPA 3.28), Expected 2027"
     }
   ],
   "workExperiences": [
     {
       "position": "Software Engineer (Freelance)",
-      "company": "",
-      "years": ["2024", "Current"],
+      "years": ["2024", "Present"],
       "details": [
         "MassageHubs — Developed a mobile application for purchasing and redeeming gift certificates across four client branches in California. Contributed to both application development and system design.",
         "EazeMe — Designed the system architecture and developed separate mobile applications for customers and massage therapists, supporting at-home massage services with location-based matching to connect customers with the nearest available therapist."
       ]
     },
     {
-      "position": "Software Engineer",
+      "position": "Software Engineer (Part-Time)",
       "company": "Paperless Company Limited",
       "url": "https://paperless-th.com",
       "years": ["2023", "2024"],
@@ -66,7 +65,7 @@
       "position": "Software Engineer (Intern)",
       "company": "Paperless Company Limited",
       "url": "https://paperless-th.com",
-      "years": ["2023 (2 Months)"],
+      "years": ["Feb-Apr 2023 (2 months)"],
       "details": [
         "Learned and applied Flutter and Dart fundamentals, including reusable components, grid layouts, state management, responsive UI design, and widget-based development through hands-on practice.",
         "Developed an Apple Calculator clone using Flutter and Dart, implementing both the user interface and calculation logic to recreate the core functionality and design of the original application.",
