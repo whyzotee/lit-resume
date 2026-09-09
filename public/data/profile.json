@@ -107,7 +107,13 @@
       "hide": false
     }
   ],
-  "interests": ["High Performance Computing", "Quantum computing"],
+  "interests": [
+    "Rust: Completed Rustlings and continuing to learn through hands-on projects.",
+    "Software Engineering",
+    "Open Source",
+    "High-Performance Computing",
+    "Quantum computing"
+  ],
   "certificates": [
     {
       "name": "Google Cloud Computing Foundations Certificate",
