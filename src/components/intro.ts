@@ -26,7 +26,7 @@ export function introTemplate(intro?: IIntro) {
       </div>
 
       <h2
-        class="flex-none basis-full sm:basis-auto order-first sm:order-none print:order-none text-3xl sm:text-2xl md:text-3xl lg:text-6xl text-center px-0 py-2 sm:p-4 print:pt-0 wrap-break-word"
+        class="flex-none basis-full sm:basis-auto order-first sm:order-0 print:order-0 text-3xl sm:text-2xl md:text-3xl lg:text-6xl text-center px-0 py-2 sm:p-4 print:pt-0 wrap-break-word"
       >
         ${name}
         ${nickname ? html`<span class="block -mt-1 text-base lg:text-lg">(${nickname})</span>` : ""}
